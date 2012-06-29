@@ -321,7 +321,7 @@
     toolbar: [
       'h1', 'h2', 'h3', 'p', 'bold', 'italic', 'unordered', 'ordered', 'insertLink', 'insertImage', 'changeView'
     ],
-    stylesheets: ["css/editor.css"],
+    stylesheets: [],
     parserRules: parserRules,
     imageEditor: {
       aspectRatio:null,
