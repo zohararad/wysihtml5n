@@ -60,6 +60,10 @@ You may have noticed the assets are not minified or concatenated. This is on pur
 
 If you're already using Twitter Bootstrap, there's no need to include the bootstrap.css file from **dist/css** although you might want to remove the "icons.less" part from your build, since it doesn't play nicely with Font Awesome
 
+### Browser Support
+
+You'll need an ES5 compliant browser to run WYSIHTML5 Enhanced. To use the Drag & Drop feature, you'll need a browser with Drag & Drop and FileReader support. That means that if you're browser has either "Internet" or "Explorer" in its name, all hell will break loose.
+
 ## Contributing
 
 Found a bug? Need extra features? Feel free to open an issue. Or, even better, fork, fix and send me a pull request.
