@@ -29,7 +29,9 @@ var options = {
   toolbar: ['h1', 'h2', 'h3', 'p', 'bold', 'italic', 'unordered', 'ordered', 'insertLink', 'insertImage', 'changeView'],
   // additional stylesheets used by the editor to display edited content
   stylesheets: ['css/editor.css'],
-  // configure the underlying wysihtml5 HTML parser. By default, the advanced wysihtml5 parser is used. See the wysihtml5 for more details
+  // configure the underlying wysihtml5 HTML parser.
+  // By default, the advanced wysihtml5 parser is used.
+  // See the http://xing.github.com/wysihtml5/ for more details
   parserRules: {...},
   // configure image editor options
   imageEditor: {
@@ -42,5 +44,33 @@ var options = {
   }
 }
 
-$('#editor-textarea').wysiHTML5N(options);
+$('#my-textarea').wysiHTML5N(options);
 ```
+
+### Making sure things work properly
+
+Your project's directory structure might be different than mine. In case it is, please make sure that:
+
+* font-awesome.css knows where to find the **fonts** directory
+* wysihtml5.css knows where to find Jcrop.gif (see line 47)
+
+### Deploying
+
+You may have noticed the assets are not minified or concatenated. This is on purpose. As an adult Web developer I assume you have your own way of minifying and concatenating your assets, so there's no reason for me to worry about that.
+
+If you're already using Twitter Bootstrap, there's no need to include the bootstrap.css file from **dist/css** although you might want to remove the "icons.less" part from your build, since it doesn't play nicely with Font Awesome
+
+## Contributing
+
+Found a bug? Need extra features? Feel free to open an issue. Or, even better, fork, fix and send me a pull request.
+
+## License
+
+The MIT License (MIT)
+Copyright (c) 2012 Zohar Arad
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
