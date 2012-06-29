@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>WYSIHTML5 Enhanced</title>
+  <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="dist/css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="dist/css/font-awesome.css" type="text/css" />
+  <link rel="stylesheet" href="dist/css/wysihtml5.css" type="text/css" />
+  <link rel="stylesheet" href="public/css/bootstrap.min.css" type="text/css" />
+  <link rel="stylesheet" href="public/css/editor.css" type="text/css" />
+  <link rel="stylesheet" href="public/css/prettify.css" type="text/css" />
+</head>
+<body>
+  <div id="main">
+    <header id="page-header">
+      <h1 class="container">WYSIHTML5 Enhanced</h1>
+    </header>
+    <div class="container">
+      <section class="hero-unit">
+        <p>A supercharged version of the wonderful wysihtml5 editor, powered by Twitter Bootstrap, Font Awesome and Jcrop</p>
+        <div id="editor">
+          <textarea id="wysihtml5-editor" spellcheck="false" wrap="off" autofocus placeholder="Enter something ..."></textarea>
+        </div>
+      </section>
+      <div class="row" id="content">
+        <section class="span6">
+          <header>
+            <h1>The "Why?"</h1>
+          </header>
+          <p>
+            WYSIHTML5 Enhanced is inspired by the great work of <strong>James Hollingworth</strong> on <a href="http://jhollingworth.github.com/bootstrap-wysihtml5/" target="_blank">bootstrap-wysihtml5</a>.
+            However to improve the image handling mechanism in both James' version and the <a href="http://xing.github.com/wysihtml5/" target="_blank">original wysihtml5 editor</a>, I decided to create my own version
+          </p>
+          <p>
+            WYSIHTML5 Enhanced differs from its ancestors in its support for adding image via drag-and-drop rather than a simple URL input. To that end, I assume you're going to use it with an
+            ES5 compliant browser, with support for both Drag-and-Drop and FileReader APIs.
+          </p>
+        </section>
+        <section class="span6">
+          <header>
+            <h1>The "How?"</h1>
+          </header>
+          <p>
+            First you need to include some Javascript and CSS files in your page (thought you'd get away with it didn't ya?). All the files you need, except jQuery are available under the
+            <strong>dist</strong> folder in the repository. Just add it to your code base and include.
+          </p>
+          <h3>Somewhere in your code:</h3>
+          <pre class="prettyprint linenums">
+            <ol class="linenums">
+              <li class="L0">
+                <span class="pln">$</span><span class="pun">(</span><span class="str">'#wysihtml5-editor'</span><span class="pun">).</span><span class="pln">wysiHTML5N</span><span class="pun">();</span>
+              </li>
+            </ol>
+          </pre>
+          <p>
+            <a href="" class="btn btn-large btn-inverse">View Project on Github</a>
+          </p>
+        </section>
+      </div>
+    </div>
+    <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="dist/js/jquery.Jcrop.js"></script>
+  <script src="dist/js/wysihtml5-0.3.0.js"></script>
+  <script src="dist/js/wysihtml5-enhanced.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#wysihtml5-editor').wysiHTML5N({
+        stylesheets:['dist/css/editor.css']
+      });
+    });
+  </script>
+</body>
+</html>
