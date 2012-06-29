@@ -15,4 +15,32 @@ WYSIHTML5 Enhanced doesn't try to change the original wysihtml5 editor but to si
 * Include the CSS and Javascripts in your page (CSS at the top, JS at the bottom. You do remember, right?)
 * Somewhere in your code, run the following:
 
-    $('#my-textarea').wysiHTML5N();
+```javascript
+$('#my-textarea').wysiHTML5N();
+```
+
+### Available options
+
+You can configure the editor by passing an **options** object to the initializer. Here are the available options with their default values.
+
+```javascript
+var options = {
+  // configure which elements to show in the toolbar
+  toolbar: ['h1', 'h2', 'h3', 'p', 'bold', 'italic', 'unordered', 'ordered', 'insertLink', 'insertImage', 'changeView'],
+  // additional stylesheets used by the editor to display edited content
+  stylesheets: ['css/editor.css'],
+  // configure the underlying wysihtml5 HTML parser. By default, the advanced wysihtml5 parser is used. See the wysihtml5 for more details
+  parserRules: {...},
+  // configure image editor options
+  imageEditor: {
+    // image croping aspect ration (defaults to null)
+    aspectRatio: 16/9,
+    // drop area width. Defaults to 530px
+    width: 530,
+    // drop area height. Defaults to 300px
+    height: 300
+  }
+}
+
+$('#editor-textarea').wysiHTML5N(options);
+```
