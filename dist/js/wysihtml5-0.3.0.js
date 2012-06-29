@@ -5061,6 +5061,16 @@ wysihtml5.dom.parse = (function() {
         });
       };
     })(),
+
+    dataURI: (function() {
+      var REG_EXP = /^data\:image\//i;
+      return function(attributeValue) {
+        if (!attributeValue || !attributeValue.match(REG_EXP)) {
+          return null;
+        }
+        return attributeValue;
+      };
+    })(),
     
     alt: (function() {
       var REG_EXP = /[^ a-z0-9_\-]/gi;

@@ -100,7 +100,9 @@
       "img": {
         "check_attributes": {
           "width": "numbers",
-          "height": "numbers"
+          "height": "numbers",
+          "src": "dataURI",
+          "alt": "alt"
         },
         "add_class": {
           "align": "align_img"
