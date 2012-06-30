@@ -35,7 +35,7 @@ var options = {
   parserRules: {...},
   // configure image editor options
   imageEditor: {
-    // image croping aspect ration (defaults to null)
+    // image croping aspect ratio (defaults to null)
     aspectRatio: 16/9,
     // drop area width. Defaults to 530px
     width: 530,
@@ -62,7 +62,7 @@ If you're already using Twitter Bootstrap, there's no need to include the bootst
 
 ### Browser Support
 
-You'll need an ES5 compliant browser to run WYSIHTML5 Enhanced. To use the Drag & Drop feature, you'll need a browser with Drag & Drop and FileReader support. That means that if you're browser has either "Internet" or "Explorer" in its name, all hell will break loose.
+You'll need an ES5 compliant browser to run WYSIHTML5 Enhanced. To use the Drag & Drop feature, you'll need a browser with Drag & Drop and FileReader support. That means that if your browser has either "Internet" or "Explorer" in its name, all hell will break loose.
 
 ## Contributing
 

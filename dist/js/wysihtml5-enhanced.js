@@ -709,15 +709,6 @@
         parserRules: options.parserRules
       });
 
-      // force a new paragraph for empty content
-      var f = function(){
-        var composer = textEditor.composer;
-        if($dom.$textarea.val().trim() === ''){
-          composer.commands.exec("insertHTML", "<p></p>");
-          composer.selection.selectNode(composer.element.querySelector("p"));
-        }
-      }
-      setTimeout(f, 400);
       if(options.toolbar.indexOf('insertImage') > -1){
         initImageEditor();
       }
