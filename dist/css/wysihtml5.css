@@ -24,6 +24,9 @@
   text-align: center;
 }
 
+.drop-image img {
+  max-width: 3000px;
+}
 /** Jcrop **/
 
 /* jquery.Jcrop.css v0.9.10 - MIT License */
