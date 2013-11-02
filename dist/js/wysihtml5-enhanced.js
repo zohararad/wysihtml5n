@@ -90,7 +90,7 @@
       },
       "a": {
         "check_attributes": {
-          "href": "href"
+          "href": "url" // if you compiled master manually then change this from 'url' to 'href'
         },
         "set_attributes": {
           "rel": "nofollow",
