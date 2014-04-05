@@ -769,7 +769,7 @@
 
   $.fn.wysiHTML5N.defaults = {
     toolbar: [
-      'h1', 'h2', 'h3', 'p', 'bold', 'italic', 'unordered', 'ordered', 'insertLink', 'insertImage', 'changeView'
+      'h1', 'h2', 'h3', 'p', 'bold', 'italic', 'ul', 'ol', 'insertLink', 'insertImage', 'changeView'
     ],
     stylesheets: [],
     parserRules: parserRules,
